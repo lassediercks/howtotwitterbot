@@ -1,8 +1,8 @@
 const Twit = require("twit");
-const URL = "https://github.com/lassediercks/howtotwitterbot";
 const express = require("express");
 const app = express();
 const http = require("http");
+const tweet = require("./tweet");
 
 app.set("port", process.env.PORT || 5000);
 
@@ -36,7 +36,10 @@ function Tweet() {
   T.post(
     "statuses/update",
     {
-      status: `You can change the content of this daily tweet here:${URL}`
+      status: `${tweet.slice(
+        0,
+        202
+      )}\n\n> You can change the content of this daily tweet here: https://goo.gl/e8CfYx`
     },
     function(err, data, response) {
       console.log(data);
