@@ -1,2 +1,2 @@
 // limited to 202 chars
-module.exports = "Hello World!";
+module.exports = "Hey you 👋 Yes, you 🙌 You are awesome 💫 Have a great day 🌈🦄";
