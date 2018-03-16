@@ -30,7 +30,7 @@ var T = new Twit({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-setInterval(Tweet, 6000 * 60 * 23);
+setInterval(Tweet, 6000 * 60 * 10 * 23);
 
 function Tweet() {
   T.post(
